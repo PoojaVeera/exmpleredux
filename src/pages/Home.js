@@ -4,5 +4,5 @@ import { useDispatch, useSelector } from "react-redux";
 export const Home = () => {
   const username = useSelector((state) => state.user.value.username);
 
-  return <div>This is home page{username}</div>;
+  return <div>This is home page&nbsp;{username}</div>;
 };

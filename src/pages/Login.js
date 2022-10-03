@@ -10,7 +10,7 @@ export const Login = () => {
 
   return (
     <div>
-      <h2>this is login page {username}</h2>
+      <h2>this is login page &nbsp;{username}</h2>
       <input
         onChange={(e) => {
           setnewUsername(e.target.value);
@@ -21,7 +21,7 @@ export const Login = () => {
       <button onClick={() => dispatch(login({ username: newUsername }))}>
         login
       </button>
-      <button>logout</button>
+      <button onClick={() => dispatch(logout())}>logout</button>
     </div>
   );
 };

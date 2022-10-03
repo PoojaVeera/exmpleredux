@@ -10,11 +10,12 @@ function App() {
   return (
     <div>
       <Provider store={store}>
+        <Link to="/">Home</Link>
+        &nbsp; &nbsp;
+        <Link to="/Login">Login</Link>
+        &nbsp; &nbsp;
+        <Link to="/Contact">Contact</Link>
         <Routes>
-          <Link to="/">home</Link>
-          <Link to="/Login">login</Link>
-          <Link to="/Contact">contact</Link>
-
           <Route path="/" element={<Home />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Contact" element={<Contact />} />
